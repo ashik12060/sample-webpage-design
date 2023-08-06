@@ -1,0 +1,126 @@
+.bg-color{
+    background-color: rgb(4, 97, 151);
+}
+.order-format{
+    color:white;
+    text-align: center;
+    padding-top: 50px;
+}
+.order-container{
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-between;
+    padding-left:5px;
+    padding-right:5px;
+    font-size: 12px;
+}
+.order-container2{
+    display: flex;
+    border-right:1px solid white;
+    border-left:1px solid white;
+    border-bottom:1px solid white;
+    justify-content: space-between;
+    padding-left:15px;
+    padding-right:15px;
+    font-size: 12px;
+}
+.order-container2 h6{
+    font-size: 12px;
+}
+.order-container3{
+    display: flex;
+    border-right:1px solid white;
+    border-left:1px solid white;
+    justify-content: space-between;
+    padding-left:5px;
+    padding-right:5px;
+    font-size: 12px;
+}
+.order-container3 h6{
+    font-size: 12px;
+}
+.order-container4{
+    display: flex;
+    border-right:1px solid white;
+    border-left:1px solid white;
+    border-bottom:1px solid white;
+    justify-content: space-between;
+    padding-left:5px;
+    padding-right:5px;
+}
+.order-container4 h6{
+    font-size: 12px;
+}
+
+.size-container{
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color:rgb(224, 206, 206);
+}
+.display-container{
+    display: flex;
+    justify-content: center;
+}
+
+.input-style{
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-right: 200px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background: none;
+    border:1px solid rgb(248, 243, 243);
+    color:rgb(233, 217, 217);
+    
+}
+::placeholder {
+    color: rgb(233, 217, 217);
+    opacity: 1;
+  }
+.pay-ment{
+    background-color: white;
+    border-radius: 0px 20px 0px 0px;
+    text-align: center;
+    padding-top:10px;
+    
+}
+.payment-text{
+    background-color: rgba(8, 28, 94, 0.904);
+    color:white;
+    padding: 10px;
+   
+}
+.bill-style{
+    color:white;
+}
+.pay{
+    font-size: 12px;
+}
+
+.brek-img{
+    width: 120px;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.order-text2{
+    padding-right: 4px;
+    padding-left: 5px;
+}
+
+.order-btn-style{
+    background-color: yellow;
+    border: none;
+    padding:20px 230px;
+    margin-top: 10px;
+    border-radius: 30px 0px 30px 0px;
+    font-size: 20px;
+    color:  rgba(8, 28, 94, 0.904);
+    font-weight: bold;
+}
+.orders{
+    font-weight: bold;
+    font-size: 12px;
+    color:white;
+}

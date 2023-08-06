@@ -1,0 +1,38 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust this as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    flex: 0 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .carousel-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .prev-button,
+  .next-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+  

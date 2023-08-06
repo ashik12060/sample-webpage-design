@@ -204,6 +204,83 @@
     padding: 20px 25px;
     border-radius: 40px 0px;
 }
-.horizontal-line{
+.prominent{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color:rgba(8, 28, 94, 0.904);
+}
+.prominent-container{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 35px;
+    color:rgba(8, 28, 94, 0.904);
+
+}
+.prominent-text{
+    padding-left: 50px;
+}
+.trasaction-container h1{
+    text-align: center;
+    color:rgba(8, 28, 94, 0.904);
+
+}
+.transaction-text1{
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-left: 380px;
+    margin-right: 380px;
+    padding: 15px;
+    color:rgba(8, 28, 94, 0.904);
+
+}
+.transaction-text2{
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-left: 480px;
+    margin-right: 480px;
+    padding: 15px;
+    color:rgba(8, 28, 94, 0.904);
+}
+
+.pocket-container{
+    text-align: center;
+    position: relative;
+
+
+}
+.pocket-img{
+    width: 50%;
+    height: 600px;
+    border-radius: 60px 0px 60px 0px ;
     
+}
+.pocket-delivery{
+    position: absolute;
+    top: 35%;
+    left: 550px;
+}
+.pocket-delivery h1{
+    color:white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.pocket-delivery h3{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.pocket-delivery button{
+    color:rgba(8, 28, 94, 0.904);
+    background-color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 35px 0px 35px 0px;
+    border: none;
 }
