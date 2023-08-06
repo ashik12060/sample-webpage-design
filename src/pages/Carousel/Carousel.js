@@ -1,47 +1,56 @@
-import React, { useState } from 'react';
-import './Carousel.css'; // Create a CSS file for styling
-
-const slidesData = [
-  {
-    imageUrl: "jeans.png",
-    cardContent: "Card 1 Content",
-  },
-  {
-    imageUrl: "jeans.png",
-    cardContent: "Card 2 Content",
-  },
-  {
-    imageUrl: "jeans.png",
-    cardContent: "Card 3 Content",
-  },
-  // Add more slide data with image URLs and card content as needed
-];
-
+import React from "react";
+import imgS1 from "../../media/smiley-handsome-man-posing.jpg";
+import imgS2 from "../../media/smiling-young-man-with-crossed-arms-outdoors.jpg";
+import imgS3 from "../../media/young-woman-wearing-red-shirt.jpg";
+import './Carousel.css'
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Carousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handlePrevClick = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slidesData.length) % slidesData.length);
-  };
-
-  const handleNextClick = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesData.length);
-  };
-
   return (
-    <div className="carousel-container">
-      <div className="carousel">
-        {slidesData.map((slide, index) => (
-          <div key={index} className={index === currentSlide ? 'slide active' : 'slide'}>
-            <img src={slide.imageUrl} alt={`Slide ${index + 1} Image`} />
-            <div className="card-content">{slide.cardContent}</div>
+    <div className="bg">
+      <div className="continer-main2">
+          <div className="caro-container">
+            <div>
+              <img className="caro-img" src={imgS1} alt="jeans" />
+            </div>
+            <div className>
+              <h3>Jacob Jones</h3>
+              <small>Buffalo, NJ</small>
+              <p className="text-left">
+                Socialable on as carriage my position weedings railery consider. Peculiar triflin absolute and wandered
+              </p>
+            </div>
           </div>
-        ))}
-      </div>
-      <div className="carousel-navigation">
-        <button className="prev-button" onClick={handlePrevClick}>Previous</button>
-        <button className="next-button" onClick={handleNextClick}>Next</button>
-      </div>
+          <div className="caro-container">
+            <div>
+              <img className="caro-img" src={imgS2} alt="jeans" />
+            </div>
+            <div className>
+            <h3>Jacob Jones</h3>
+              <small>Buffalo, NJ</small>
+              <p className="text-left">
+                Socialable on as carriage my position weedings railery consider. Peculiar triflin absolute and wandered
+              </p>
+            </div>
+          </div>
+          <div className="caro-container">
+            <div>
+              <img className="caro-img" src={imgS3} alt="jeans" />
+            </div>
+            <div className>
+            <h3>Jacob Jones</h3>
+              <small>Buffalo, NJ</small>
+              <p className="text-left">
+                Socialable on as carriage my position weedings railery consider. Peculiar triflin absolute and wandered
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <div className="arrow-container">
+        <button className="arrow-sign1"><FontAwesomeIcon  icon={faArrowLeft} /></button>
+        <button className="arrow-sign2"><FontAwesomeIcon  icon={faArrowRight} /></button>
+        </div>
     </div>
   );
 };

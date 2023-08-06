@@ -6,17 +6,21 @@ import denim_logo from "../../media/denim.png";
 import denim_cover from "../../media/blue-woven-fabric-background-min.jpg";
 import img1 from "../../media/blue-jeans-fabric-details.png";
 import jeans from "../../media/jeans-removebg-preview.png";
+import denim_bg from "../../media/close-op-shot-collar-classy-ironed-blue-denim-male-shirt.jpg";
+
+
 import pocket from "../../media/pocket.jpg";
 import Carousel from "../Carousel/Carousel";
 import Form from "../Form/Form";
 import footerImg from "../../media/denim-clothing-fashion-stack-folded-jeans-generative-ai.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faSquareFacebook, faSquareInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <div>
       <section>
-        <div className="container">
+        <div className="container1">
           <img className="bg-container" src={bg_img} alt="bg image" />
 
           <div className="positioning">
@@ -103,7 +107,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="container">
+        <div className="container1">
           <img className="bg-container" src={denim_cover} alt="denim" />
           <div>
             <img className="new-img" src={img1} alt="new-img" />
@@ -190,6 +194,13 @@ const Home = () => {
           </div>
         </div>
 
+        <div className="denim-resizing">
+          <img className="denim-img-resize" src={denim_bg} alt="denim"/>
+          <div className="video-button">
+            <button className="play-button"><a target="_blank" href="https://www.youtube.com/watch?v=ixRanV-rdAQ"><FontAwesomeIcon className="btn-font" icon={faPlay} /></a></button>
+          </div>
+        </div>
+
         <div className="trasaction-container">
           <h1>লেনদেনকালে কিভাবে নিরাপদ থাকবেন তার কিছু নির্দেশনাবলী</h1>
           <h5 className="transaction-text1">
@@ -212,7 +223,8 @@ const Home = () => {
         </div>
       </section>
 
-      <Carousel />
+      <Carousel/>
+    
       <Form />
 
       <section>
