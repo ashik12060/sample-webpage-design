@@ -15,7 +15,7 @@ import Form from "../Form/Form";
 import footerImg from "../../media/denim-clothing-fashion-stack-folded-jeans-generative-ai.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faSquareFacebook, faSquareInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faPlay, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <div>
@@ -50,7 +50,7 @@ const Home = () => {
                 <del>৳750.00</del>
               </span>{" "}
               <span className="money-rate">৳ 550.00</span> <br></br>
-              <button className="btn-style">অর্ডার করুন</button>
+              <button className="btn-style">অর্ডার করুন <FontAwesomeIcon icon={faArrowRight} /></button>
               <h3>
                 ঢাকার বাহিরে থেকে অর্ডার করতে চাইলে ১৫০ টাকা অগ্রিম ডেলিভারি
                 পরিশোধ করুন
@@ -60,7 +60,7 @@ const Home = () => {
               <img className="banner-img" src={banner_img} alt="photo" />
               <div className="contact-position">
                 <h1>
-                  <span className="number-container">01894844452</span>
+                  <span className="number-container"><FontAwesomeIcon icon={faSquarePhone} /> 01894844452</span>
                 </h1>
                 <h4>
                   <span className="contact-option">সরাসরি কিনতে ফোন করুন</span>{" "}
@@ -124,7 +124,7 @@ const Home = () => {
               সবচেয়ে কম দামে আমাদের <br />
               থেকে কিনুন
             </h2>
-            <button className="btn-order">অর্ডার করুন</button>
+            <button className="btn-order">অর্ডার করুন <FontAwesomeIcon icon={faArrowRight} /></button>
           </div>
         </div>
       </section>
@@ -218,7 +218,7 @@ const Home = () => {
           <div className="pocket-delivery">
             <h1>মূল্য - 550.00 টাকা</h1>
             <h3>সারা দেশে ফ্রি হোম ডেলিভারি</h3>
-            <button>অর্ডার করুন</button>
+            <button>অর্ডার করুন <FontAwesomeIcon icon={faArrowRight} /></button>
           </div>
         </div>
       </section>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Form.css";
 import img1 from "../../media/8824383-removebg-preview.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Form = () => {
   return (
     <div className="bg-color height-extend">
@@ -76,7 +78,7 @@ const Form = () => {
                 <h6>৳1690.00</h6>
               </div>
             </div>
-            <button className="order-btn-style">অর্ডার করুন</button>
+            <button className="order-btn-style">অর্ডার করুন <FontAwesomeIcon icon={faArrowRight} /></button>
           </div>
         </div>
       </div>
