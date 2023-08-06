@@ -3,7 +3,7 @@ import "./Form.css";
 import img1 from "../../media/8824383-removebg-preview.png";
 const Form = () => {
   return (
-    <div className="bg-color">
+    <div className="bg-color height-extend">
       <div>
         <h1 className="order-format">
           অর্ডার করতে নিচের ফরমটি পুরন করে সাবমিট করুন !

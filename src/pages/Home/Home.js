@@ -9,6 +9,9 @@ import jeans from "../../media/jeans-removebg-preview.png";
 import pocket from "../../media/pocket.jpg";
 import Carousel from "../Carousel/Carousel";
 import Form from "../Form/Form";
+import footerImg from "../../media/denim-clothing-fashion-stack-folded-jeans-generative-ai.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faSquareFacebook, faSquareInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <div>
@@ -209,8 +212,51 @@ const Home = () => {
         </div>
       </section>
 
-      <Carousel/>
-      <Form/>
+      <Carousel />
+      <Form />
+
+      <section>
+        <div className="footer-container">
+          <img className="footerImg" src={footerImg} alt="img" />
+          
+          <div className="extra-container">
+            <div>
+              <h3>প্রয়োজনীয় লিংক</h3>
+              <hr className="horizontal"/>
+              <p>প্রাইভেসি পলিসি</p>
+              <p>শর্তাবলি</p>
+            </div>
+            <div>
+              <img className="denim-logo" src={denim_logo} alt="imgLogo" />
+              <h1>
+                Jeans <span className="jeans-color">Pants</span>
+              </h1>
+            </div>
+            <div>
+              <h3 className="jeans-color">অর্ডার পেতে কল করুন এই নাম্বারে</h3>
+              <h1>+8801799733234</h1>
+            </div>
+          </div>
+
+
+          <div className="icon-container">
+            <button className="icons"><a href="#"><FontAwesomeIcon className="icon-style" icon={faSquareFacebook} style={{color: "#1877f2",}} /></a></button>
+            <button className="icons"><a href="#"><FontAwesomeIcon className="icon-style" icon={faSquareInstagram} style={{color: "#e1306c",}} /></a></button>
+            <button className="icons"><a href="#"><FontAwesomeIcon className="icon-style" icon={faYoutube} style={{color: "#cd201f",}} /></a></button>
+          </div>
+
+          <div className="footer">
+            <p className="footer-host">System Developed by <span className="jeans-color"><u>Funnel Liner</u></span></p>
+          </div>
+
+
+
+
+          </div>
+        
+      </section>
+
+
     </div>
   );
 };
